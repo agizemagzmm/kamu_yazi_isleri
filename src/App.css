@@ -9,45 +9,234 @@ body {
   color: #111827;
 }
 
-.page {
+.loginPage {
   min-height: 100vh;
-  padding: 34px;
-}
-
-.hero {
-  max-width: 1500px;
-  margin: 0 auto 26px;
-  background: linear-gradient(135deg, #1e40af, #0f766e);
-  color: white;
-  border-radius: 28px;
-  padding: 30px;
+  background: linear-gradient(135deg, #1e3a8a, #0f766e);
   display: flex;
   align-items: center;
-  gap: 20px;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.22);
+  justify-content: center;
+  padding: 30px;
 }
 
-.logo {
-  width: 72px;
-  height: 72px;
+.loginCard {
+  width: 430px;
+  background: white;
+  border-radius: 28px;
+  padding: 36px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.loginLogo {
+  width: 74px;
+  height: 74px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, #2563eb, #059669);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.loginCard h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.loginCard p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.loginCard input,
+.loginCard select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+.loginCard button {
+  width: 100%;
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginCard span {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.appShell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar {
+  background: #0f172a;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.brand div {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #2563eb;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 26px;
 }
 
-.hero h1 {
+.brand span {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.sidebar button {
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sidebar button.active,
+.sidebar button:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.logout {
+  margin-top: auto;
+  background: #7f1d1d !important;
+  color: white !important;
+}
+
+.mainContent {
+  padding: 34px;
+  overflow-x: hidden;
+}
+
+.topbar {
+  max-width: 1500px;
+  margin: 0 auto 24px;
+  background: linear-gradient(135deg, #1e40af, #0f766e);
+  color: white;
+  border-radius: 26px;
+  padding: 26px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 34px;
 }
 
-.hero p {
-  margin: 8px 0 0;
-  font-size: 17px;
+.topbar p {
+  margin: 7px 0 0;
   opacity: 0.9;
+}
+
+.userBox {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 13px 18px;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.userBox span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.dashboard {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.statCard,
+.wideCard,
+.simplePage,
+.panel,
+.editor,
+.previewWrapper {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.09);
+  border: 1px solid #e5e7eb;
+}
+
+.statCard span {
+  color: #64748b;
+  font-weight: 700;
+}
+
+.statCard strong {
+  display: block;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.statCard p {
+  color: #059669;
+  margin: 0;
+  font-weight: 700;
+}
+
+.wideCard {
+  grid-column: span 2;
+}
+
+.fakeList p,
+.docTable p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.fakeList span,
+.docTable span {
+  color: #64748b;
 }
 
 .layout {
@@ -56,16 +245,7 @@ body {
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 24px;
-}
-
-.panel,
-.editor,
-.previewWrapper {
-  background: white;
-  border-radius: 26px;
-  padding: 24px;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
-  border: 1px solid #e5e7eb;
+  align-items: start;
 }
 
 .panel {
@@ -108,13 +288,15 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.13);
 }
 
-button {
+.primaryBtn,
+.previewBtn,
+.secondaryBtn {
   width: 100%;
   border: none;
   border-radius: 15px;
   padding: 15px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
   margin-top: 14px;
 }
@@ -134,12 +316,6 @@ button {
   color: #075985;
 }
 
-.workspace {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
 .editorTop p {
   margin: 6px 0 0;
   color: #64748b;
@@ -151,34 +327,35 @@ button {
   resize: none;
   border: 1px solid #d1d5db;
   border-radius: 18px;
-  padding: 26px;
-  font-size: 16px;
-  line-height: 1.7;
+  padding: 28px;
+  font-size: 17px;
+  line-height: 1.75;
   background: #fff;
   font-family: "Times New Roman", serif;
 }
 
 .previewWrapper {
+  grid-column: 1 / -1;
   overflow-x: auto;
 }
 
 .a4Page {
-  width: 595px;
-  min-height: 842px;
+  width: 794px;
+  min-height: 1123px;
   background: white;
   margin: 0 auto;
-  padding: 55px 60px;
+  padding: 70px 82px;
   border: 1px solid #d1d5db;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
   font-family: "Times New Roman", serif;
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 .centerHeader {
   text-align: center;
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
 }
 
 .centerHeader p {
@@ -186,7 +363,7 @@ button {
 }
 
 .meta {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .meta p {
@@ -196,19 +373,19 @@ button {
 .makam {
   text-align: center;
   font-weight: bold;
-  margin: 30px 0;
+  margin: 34px 0;
 }
 
 .bodyText p {
   text-align: justify;
-  text-indent: 28px;
-  margin-bottom: 14px;
+  text-indent: 32px;
+  margin-bottom: 16px;
 }
 
 .signature {
-  width: 230px;
+  width: 260px;
   margin-left: auto;
-  margin-top: 40px;
+  margin-top: 48px;
   text-align: center;
 }
 
@@ -216,18 +393,104 @@ button {
   margin: 5px 0;
 }
 
-@media (max-width: 1200px) {
-  .workspace {
-    grid-template-columns: 1fr;
-  }
+.toast {
+  position: fixed;
+  right: 28px;
+  top: 26px;
+  background: #0f172a;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  z-index: 999;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
 }
 
-@media (max-width: 900px) {
+.simplePage {
+  max-width: 1500px;
+  margin: auto;
+  min-height: 550px;
+}
+
+.docTable button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.voicePage {
+  text-align: center;
+}
+
+.micCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #059669);
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.3);
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.settingsGrid div {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
   .layout {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .previewWrapper {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .appShell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .wideCard {
+    grid-column: span 1;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .a4Page {
+    width: 100%;
+    min-height: auto;
+    padding: 40px;
   }
 }
