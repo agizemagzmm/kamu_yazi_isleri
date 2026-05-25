@@ -10,8 +10,8 @@ function App() {
   const [makam, setMakam] = useState("Bilgi İşlem Daire Başkanlığı");
   const [sayi, setSayi] = useState("[Evrak kayıt sistemince verilecektir]");
   const [konu, setKonu] = useState("");
-  const [adSoyad, setAdSoyad] = useState("Ayşe Gizem COŞKUN");
-  const [unvan, setUnvan] = useState("Bilgisayar Mühendisliği 4. Sınıf Öğrencisi");
+  const [adSoyad, setAdSoyad] = useState("");
+  const [unvan, setUnvan] = useState("");
   const [telefon, setTelefon] = useState("");
   const [eposta, setEposta] = useState("");
 
